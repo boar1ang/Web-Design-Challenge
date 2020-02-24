@@ -1,19 +1,97 @@
+<!--Homework 11 - Web-Design-Challenge - Landing Page-->
 <!DOCTYPE html>
 <html lang="en-us">
-<!--Homework 11 - Web-Design-Challenge-->
 <head>
     <meta charset="UTF-8">
-    <title>
-
-    </title>
-</head>
+    <title>Latitude Home</title>
+    <!-- Bootstrap CDN -->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+        <!--Font links-->
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 		
+		<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 		
+</head> 
 
 <body>
+    <!-- Creates the Overall Grid -->
+    <div class="container">
 
-
-
-</body>
-<footer>
+    <!--Header Row-->
+    <div class="row">
+        <div class="col-md-12">
+        <header>
+            <h1>Weather Analysis by Latitude Dashboard</h1>
+    <!--Navigation Menu-->
+        <nav id="main_nav">
+            <ul class="nav nav-tabs">
+                <li><a href="index.html" role="button">Latitude Home</a></li>
+                <li>&NonBreakingSpace;&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
+                <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Plots 
+                    <span class="caret"></span></a>
+                    <li>&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" role="button">Plot 1</a></li>
+                        <li><a href="visualizations/Plots-2.html" role="button">Plot 2</a></li>
+                        <li>Plot 3</li>
+                        <li>Plot 4</li>
+                        <li>&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
+                    </ul>
+                <li><a href="visualizations/Comparisons.html" role="button">Comparison</a></li>
+                <li>&NonBreakingSpace;&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
+                <li><a href="Resources/Data.html" role="button">Data</a></li>
+            </ul>
+        </nav>
+        
+    <!--End navigation menu-->
+        <br>
+        </header>
+        </div>
+    </div>
     
-</footer>
+    
+   <!--Begin landing page content text-->       
+    <div class="row">
+        <div class="col-md-12">
+        <br>
+        <h3>Welcome to the dashboard for our weather analysis project.</h3>
+        <img id="img1" src="Resources/PinClipart953446.png" alt="viz_icon" width="210" height="210">
+    
+            <p>The purpose of our project was to analyze how weather changes as one moves closer to the equator. Using 
+            the <span><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></span> API we obtained a dataset on over 500 world cities. After cleaning and organizing 
+            the data we used Pandas and Matplotlib to plot various aspects of the weather vs. latitude. Among the 
+            factors we considered were temperature, cloudiness, wind speed, and humidity.</p>
+
+            <p>This site provides the source data and visualizations created as part of the analysis, as well as 
+            explanations and descriptions of any trends and correlations witnessed. Please contact us if you have any 
+            questions about our analysis.</p>
+        </div>
+    </div>
+    <!--End landing page content text-->
+   
+    
+    <!--Footer Row-->
+    <div class="row" >
+        <div class="col-md-12">
+        <br>
+        <footer>
+            2019 <b>&NonBreakingSpace;|&NonBreakingSpace;</b> All rights reserved.
+        </footer>
+        </div>
+    </div>
+    <!--End footer-->
+    
+    <!--Close grid container-->
+    </div> 
+</body>
+
 </html>
+
+<!--Photo by Joonas Sild on Unsplash; Photo by Kenrick Mills on Unsplash; 
+Photo by Maria Isabella Bernotti from Pexels; Photo by Markus Spiske on Unsplash; <img id="lat" src="Resources/lat.png" width="28" height="28">
+-->
