@@ -1,97 +1,128 @@
-<!--Homework 11 - Web-Design-Challenge - Landing Page-->
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--BootstrapCDN stylesheet link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--End BootstrapCDN stylesheet link-->
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--End CSS stylesheet-->
+
     <title>Latitude Home</title>
-    <!-- Bootstrap CDN -->    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="Style.css">
-        <!--Font links-->
-		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 		
-		<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 		
-</head> 
+  </head>
 
-<body>
-    <!-- Creates the Overall Grid -->
-    <div class="container">
-
-    <!--Header Row-->
-    <div class="row">
-        <div class="col-md-12">
-        <header>
-            <h1>Weather Analysis by Latitude Dashboard</h1>
-    <!--Navigation Menu-->
-        <nav id="main_nav">
-            <ul class="nav nav-tabs">
-                <li><a href="index.html" role="button">Latitude Home</a></li>
-                <li>&NonBreakingSpace;&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
-                <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Plots 
-                    <span class="caret"></span></a>
-                    <li>&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" role="button">Plot 1</a></li>
-                        <li><a href="visualizations/Plots-2.html" role="button">Plot 2</a></li>
-                        <li>Plot 3</li>
-                        <li>Plot 4</li>
-                        <li>&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
-                    </ul>
-                <li><a href="visualizations/Comparisons.html" role="button">Comparison</a></li>
-                <li>&NonBreakingSpace;&NonBreakingSpace;&#8250;&NonBreakingSpace;&NonBreakingSpace;</li>
-                <li><a href="Resources/Data.html" role="button">Data</a></li>
-            </ul>
-        </nav>
+  <body>
+      <!-- Creates the Overall Grid************************************** -->
+    <div class="container-lg">
+     
+        <!--Begin Header Row -->
+        <div class="row">
+            <div class="col-lg-12">
+            <header>
+                <h2>Weather Analysis by Latitude Dashboard</h2>
+            
+                <ul class="nav nav-tabs justify-content-end">    
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info active" href="#">Latitude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info" href="visualizations/Comparisons.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info" href="Resources/Data.html" role="button">Data</a>
+                    </li>
+                    <!--Dropdown Button -->
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="dropdown-item"><a href = "visualizations/Plots-1.html">Plot 1</a></li>
+                                    <li class="dropdown-item"><a href = "visualizations/Plots-2.html">Plot 2</a></li>
+                                    <li class="dropdown-item"><a href = "visualizations/Plots-3.html">Plot 3</a></li>
+                                    <li class="dropdown-item"><a href = "visualizations/Plots-4.html">Plot 4</a></li>
+                               </ul>
+                        </li>  
+                     <!--End Dropdown Button --> 
+                 </ul> <!-- End nav menu -->
+              </header>
+            </div>    
+        </div>  <!--End header row -->     
         
-    <!--End navigation menu-->
-        <br>
-        </header>
-        </div>
-    </div>
-    
-    
-   <!--Begin landing page content text-->       
-    <div class="row">
-        <div class="col-md-12">
-        <br>
-        <h3>Welcome to the dashboard for our weather analysis project.</h3>
-        <img id="img1" src="Resources/PinClipart953446.png" alt="viz_icon" width="210" height="210">
-    
-            <p>The purpose of our project was to analyze how weather changes as one moves closer to the equator. Using 
-            the <span><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></span> API we obtained a dataset on over 500 world cities. After cleaning and organizing 
-            the data we used Pandas and Matplotlib to plot various aspects of the weather vs. latitude. Among the 
-            factors we considered were temperature, cloudiness, wind speed, and humidity.</p>
 
-            <p>This site provides the source data and visualizations created as part of the analysis, as well as 
-            explanations and descriptions of any trends and correlations witnessed. Please contact us if you have any 
-            questions about our analysis.</p>
+
+
+    <!--Begin Main Landing Page Content -->
+    <div class="row">
+        <div class="col-lg-8">
+            <img id="img1" src="Resources//PinClipart953446.png" alt="viz_icon" width="210" height="205">
+            
+            <h4>Welcome to the dashboard for our weather analysis project.</h4>
+            
+                <p>The purpose of our project was to analyze how weather changes as one moves closer to the equator. Using 
+                the <span><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></span> API we obtained a dataset on over 500 world cities. After cleaning and organizing 
+                the data we used Pandas and Matplotlib to plot various aspects of the weather vs. latitude. Among the 
+                factors we considered were temperature, cloudiness, wind speed, and humidity.</p>
+
+                <p>This site provides the source data and visualizations created as part of the analysis, as well as 
+                explanations and descriptions of any trends and correlations witnessed. Please contact us if you have any 
+                questions about our analysis.</p>
         </div>
+        <!--Begin Card Container-->
+        <div class="row" >
+        <div class="col-lg-4" id="card_cont">
+            <aside class="justify-content-end">
+                    <br>
+                <h4>Check out the plots</h4>
+                    <br>
+                
+                <div class="float-right">
+                    <img src="" alt="" class="img-thumbnail">
+                    <img src="" alt="" class="img-thumbnail rounded float-right">
+                </div>
+
+                    <br>
+
+                <div class="float-right">
+                    <img src="" alt="" class="img-thumbnail">
+                    <img src="" alt="" class="img-thumbnail rounded float-right">
+                </div>
+            </aside>
+        </div>
+      </div>
     </div>
-    <!--End landing page content text-->
-   
-    
-    <!--Footer Row-->
-    <div class="row" >
-        <div class="col-md-12">
+    <!--End main landing page content-->
+
+
+        <!--Begin Footer Row-->
+        <div class="row">
+        <div class="col-lg-12">
         <br>
-        <footer>
-            2019 <b>&NonBreakingSpace;|&NonBreakingSpace;</b> All rights reserved.
-        </footer>
+            <footer>
+                <img src="https://img.icons8.com/offices/30/000000/latitude.png" alt="globe_latitude_icon"> 2019 <b>&NonBreakingSpace;|&NonBreakingSpace;</b> All rights reserved.
+            </footer>
         </div>
-    </div>
-    <!--End footer-->
+        </div>
+        <!--Latitude icon credit: <a href="https://icons8.com/icon/e-ksKh0ZKGWb/latitude">Latitude icon by Icons8</a> -->
+        <!--End footer row-->
+
     
-    <!--Close grid container-->
-    </div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <!--Close grid container************************************* -->
+  </div>
+  
 </body>
 
 </html>
-
-<!--Photo by Joonas Sild on Unsplash; Photo by Kenrick Mills on Unsplash; 
-Photo by Maria Isabella Bernotti from Pexels; Photo by Markus Spiske on Unsplash; <img id="lat" src="Resources/lat.png" width="28" height="28">
--->
+<!-- Images 
+<img src="https://img.icons8.com/officel/30/000000/windy-weather.png"> <a href="https://icons8.com/icon/e3PComEryAuD/windy-weather">Windy Weather icon by Icons8</a>
+<img src="https://img.icons8.com/office/16/000000/thermometer.png"> <a href="https://icons8.com/icon/32692/thermometer">Thermometer icon by Icons8</a>
+<img src="https://img.icons8.com/color/48/000000/humidity.png"> <a href="https://icons8.com/icon/13001/humidity">Humidity icon by Icons8</a>-->

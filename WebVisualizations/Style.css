@@ -1,88 +1,43 @@
 
-   body {
-    text-align: center;
-    
-    }         
-  
-  .container{
+body {
+        text-align: left; 
+}
+
+.container-lg {
     background-color:#e1e5ea;
     border: 4px solid #2E3C4D;
-   }  
-  header {
-    padding-top 12px;
-  }
-   .col-md-12 {
-    text-align: left;
-  }
-  
-  #main_nav {
-    background-color: #A6A8C9;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 6px;
-    padding-left: 6px;
-    
-  }
-  
-
-
-  h1 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: #344457;
-    } 
-
-  h3 {
-    color: #344457;
-    font-family: 'metacopy';
-    }
-
- #img1 {
-   
-   float: left;
-   margin-right: 6px;
-  } 
-  
- 
-
- li {
-  text-decoration: none;
-  color: #344457;
- }
-  #lat {
-    position: relative;
-    bottom: 2px;
-  }
-
-  footer {
-    text-align: center;
-    font-family: 'Candara';
+    margin-top: 1rem;
+    border-radius: 3px;
 }
-  
 
-/*CSS rules for Google fonts
-font-family: 'Lato', ;
-font-family: 'Caveat', ;
-font-family: 'Lexend Deca';
-font-family: 'Special Elite', ;
-font-family: 'Comfortaa', ;
-font-family: 'Montserrat', ;
-font-family: 'Dosis', ;
-font-family: "Times New Roman", Times, serif;
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-family: 'Gentium Basic', serif;
-font-family: 'metacopy';
+header {
+border: 2px solid #A6A8C9;
+background-color: #F3F5FF;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 0.5rem;
+padding-bottom: 0.25rem;
+border-radius: 3px;
 
-font-family: 'Open Sans', ;
-font-family: 'Quicksand', sans-serif;
 
-font-family: 'Special Elite', cursive;
-font-family: 'Averia Sans Libre', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'stalemate', cursive;
-https://hackerthemes.com/bootstrap-cheatsheet/
-font-family: Arial, Helvetica, sans-serif  
-font-family: Tahoma, Geneva, sans-serif
-font-family: "Trebuchet MS", Helvetica, sans-serif
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-font-family: 
-*/
+}
+/* --------------------------------------------------- */
+#card_cont {
+    border: 1.5px solid orange;
+    float: right;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+    background-color: #A6A8C9;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 3px;
+}
+
