@@ -17,18 +17,17 @@
   </head>
 
   <body>
-      <!-- Creates the Overall Grid************************************** -->
+  <!-- Creates the Overall Grid************************************** -->
     <div class="container-lg">
      
         <!--Begin Header Row -->
         <div class="row">
             <div class="col-lg-12">
             <header>
-                <h2>Weather Analysis by Latitude Dashboard</h2>
-            
+                <h2>Weather Analysis by Latitude</h2>
                 <ul class="nav nav-tabs justify-content-end">    
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info active" href="#">Latitude</a>
+                        <a class="nav-link btn btn-info active" href="index.html">Latitude Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-info" href="visualizations/Comparisons.html">Comparison</a>
@@ -57,44 +56,44 @@
 
     <!--Begin Main Landing Page Content -->
     <div class="row">
-        <div class="col-lg-8">
-            <img id="img1" src="Resources//PinClipart953446.png" alt="viz_icon" width="210" height="205">
+        <div class="col-lg-7">
             
-            <h4>Welcome to the dashboard for our weather analysis project.</h4>
+            <h3><img id="img_pg1" align="left" class="TextWrapRight" src="Resources//PinClipart953446.png" alt="viz_icon" width="210" height="205">Welcome to the dashboard for our weather analysis project.</h3>
+        </div>
+    
+        <div class="col-lg-5">   
+            <br>
+            <br> 
+            <h4 id="compare">Compare plots</h4>  
+        </div>
+    
+    </div>         
+    
+             
             
-                <p>The purpose of our project was to analyze how weather changes as one moves closer to the equator. Using 
+    <div class="row">
+
+        <div class="col-lg-7">        
+                <h4 id="pg1_htag">SUMMARY</h4>
+            <p>The purpose of our project was to analyze how weather changes as one moves closer to the equator. Using 
                 the <span><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></span> API we obtained a dataset on over 500 world cities. After cleaning and organizing 
                 the data we used Pandas and Matplotlib to plot various aspects of the weather vs. latitude. Among the 
                 factors we considered were temperature, cloudiness, wind speed, and humidity.</p>
 
                 <p>This site provides the source data and visualizations created as part of the analysis, as well as 
-                explanations and descriptions of any trends and correlations witnessed. Please contact us if you have any 
+                explanations and descriptions of any trends and correlations witnessed. Please <a href="#">contact us</a> if you have any 
                 questions about our analysis.</p>
         </div>
-        <!--Begin Card Container-->
-        <div class="row" >
-        <div class="col-lg-4" id="card_cont">
-            <aside class="justify-content-end">
-                    <br>
-                <h4>Check out the plots</h4>
-                    <br>
-                
-                <div class="float-right">
-                    <img src="" alt="" class="img-thumbnail">
-                    <img src="" alt="" class="img-thumbnail rounded float-right">
-                </div>
 
-                    <br>
-
-                <div class="float-right">
-                    <img src="" alt="" class="img-thumbnail">
-                    <img src="" alt="" class="img-thumbnail rounded float-right">
-                </div>
-            </aside>
+        <div class="col-lg-5">   
+            
+            <a href="visualizations/Plots-1.html"><img src="visualizations/LatVsTemp.png" alt="Temp Thumbnail" class="img-thumbnail" width="130" height="140"></a> <a href="visualizations/Plots-2.html"><img src="visualizations/LatVsCloudiness.png" alt="Cloudiness Thumbnail" width="125" height="135" class="img-thumbnail"></a>
+                <br>
+            <a href="visualizations/Plots-3.html"><img src="visualizations/LatVsHumidity.png" alt="Humidity Thumbnail" class="img-thumbnail" width="129" height="136"></a> <a href="visualizations/Plots-4.html"><img src="visualizations/LatVsWindSpeed.png" alt="WindSpeed Thumbnail" width="125" height="135" class="img-thumbnail"></a>
+                <br>
         </div>
-      </div>
-    </div>
-    <!--End main landing page content-->
+</div>
+
 
 
         <!--Begin Footer Row-->
@@ -116,13 +115,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-    <!--Close grid container************************************* -->
+  <!--Close grid container************************************* -->
   </div>
   
 </body>
 
 </html>
-<!-- Images 
-<img src="https://img.icons8.com/officel/30/000000/windy-weather.png"> <a href="https://icons8.com/icon/e3PComEryAuD/windy-weather">Windy Weather icon by Icons8</a>
-<img src="https://img.icons8.com/office/16/000000/thermometer.png"> <a href="https://icons8.com/icon/32692/thermometer">Thermometer icon by Icons8</a>
-<img src="https://img.icons8.com/color/48/000000/humidity.png"> <a href="https://icons8.com/icon/13001/humidity">Humidity icon by Icons8</a>-->
+

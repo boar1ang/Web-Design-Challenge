@@ -18,21 +18,21 @@
   </head>
 
   <body>
-      <!-- Creates the Overall Grid************************************** -->
+      <!-- Creates the Overall Grid ************************************** -->
     <div class="container-lg">
      
         <!--Begin Header Row -->
         <div class="row">
             <div class="col-lg-12">
             <header>
-                <h2>Weather Analysis by Latitude Dashboard</h2>
+                <h2>Weather Analysis by Latitude</h2>
             
                 <ul class="nav nav-tabs justify-content-end">    
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info active" href="../index.html">Latitude</a>
+                        <a class="nav-link btn btn-info active" href="../index.html">Latitude Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info" href="#">Comparison</a>
+                        <a class="nav-link btn btn-info" href="Comparisons.html">Comparison</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-info" href="../Resources/Data.html" role="button">Data</a>
@@ -47,17 +47,66 @@
                             <li class="dropdown-item"><a href = "Plots-4.html">Plot 4</a></li>
                        </ul>
                      </li>  
-                     <!--End Dropdown Button --> 
+                    <!--End Dropdown Button --> 
                 </ul> <!-- End nav menu -->
         </header>
     </div>    
 </div>  <!--End header row -->   
 
-
 <!--Begin main Comparisons page content-->
         <div class="row">
-            <div class="">
+            <div id="Comparison_Gallery">
+                <span><h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Plot Comparison Gallery</h1><p>Latitude vs. Temperature Plots</p></span>
+                    <hr class="mt-2 mb-5">
+                <div class="row text-center text-lg-left">
+                    
+                    <div class="col-lg-3 col-6">
+                        <a href="Plots-1.html" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="LatVsTemp.png" alt="Temperature"></a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-6">
+                        <a href="Plots-1.html" class="d-block mb-4 h-100">
+                              <img class="img-fluid img-thumbnail" src="LatVsMaxTempRegressNorthern.png" alt="Northern Hemisphere Temp"></a>
+                      </div>
+                      
+                    <div class="col-lg-3 col-6">
+                        <a href="Plots-1.html" class="d-block mb-4 h-100">
+                              <img class="img-fluid img-thumbnail" src="LatVsMaxTempRegressSouthern.png" alt="Southern Hemisphere Temp"></a>
+                      </div>
+            </div>        
+        </div>           
+        
+        <div class="row">
+            <div id="Comparison_Gallery2">          
+                <span><h5 class="font-weight-light text-center text-lg-left mt-4 mb-0">Cloudiness &nbsp&#124;&nbsp; Humidity &nbsp&#124;&nbsp; Wind Speed</h5></span>
+                <hr class="mt-2 mb-5">
+                    <div class="row text-center text-lg-left">
+                   
+                    <div class="col-lg-3 col-6">
+                        <a href="Plots-2.html" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="LatVsCloudiness.png" alt="Cloudiness">
+                          </a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-6">
+                      <a href="Plots-3.html" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="LatVsHumidity.png" alt="Humidity">
+                          </a>
+                    </div>
+                    
+                    
+                    <div class="col-lg-3 col-6">
+                      <a href="Plots-4.html" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="LatVsWindSpeed.png" alt="Wind Speed">
+                          </a>
+                    </div>
+                    
+          </div>    
+      </div>
+    <!--End image gallery-->
 
+                
 
 
             </div>

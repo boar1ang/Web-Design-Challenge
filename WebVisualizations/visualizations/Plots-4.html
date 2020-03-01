@@ -18,18 +18,18 @@
   </head>
 
   <body>
-      <!-- Creates the Overall Grid************************************** -->
+    <!-- Creates the Overall Grid************************************** -->
     <div class="container-lg">
      
         <!--Begin Header Row -->
         <div class="row">
             <div class="col-lg-12">
             <header>
-                <h2>Weather Analysis by Latitude Dashboard</h2>
+                <h2>Weather Analysis by Latitude</h2>
             
                 <ul class="nav nav-tabs justify-content-end">    
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info active" href="../index.html">Latitude</a>
+                        <a class="nav-link btn btn-info active" href="../index.html">Latitude Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-info" href="Comparisons.html">Comparison</a>
@@ -44,7 +44,7 @@
                             <li class="dropdown-item"><a href = "Plots-1.html">Plot 1</a></li>
                             <li class="dropdown-item"><a href = "Plots-2.html">Plot 2</a></li>
                             <li class="dropdown-item"><a href = "Plots-3.html">Plot 3</a></li>
-                            <li class="dropdown-item"><a href = "#">Plot 4</a></li>
+                            <li class="dropdown-item"><a href = "Plots-4.html">Plot 4</a></li>
                        </ul>
                 </li>  
              <!--End Dropdown Button --> 
@@ -54,7 +54,28 @@
 </div>  <!--End header row -->     
 
 
+<div class="row">
+    <div class="col-lg-12">
+        <h3><img src="../Resources/mahkeo-WtwSsqwYlA0-unsplash.jpg" alt="Wind Blowing Tree" width="290" height="240">&nbsp;Latitude vs. Windiness</h3>
+        <hr>
+    </div>
+</div>
 
+
+
+<div class="row">
+    <div class="col-lg-6" id="plt4ptag">
+        <h5><i><b>Are wind speeds related to latitude?</b></i></h5>
+        <p>Although wind speeds across our sample of cities tend to cluster between 5 - 15 MPH, there is no apparent relationship between wind 
+            speeds and latitude in this dataset.&nbsp;&nbsp;<img src="https://img.icons8.com/office/40/000000/wind.png"></p>
+            <p>The two highest wind speeds were recorded in the cities of Tasiilaq (65.61 Lat, -37.64 Lon) 
+            and Nemuro (43.32 Lat, 145.57 Lon), measuring in at 31.09 MPH and 28.66 MPH respectively.</p>
+    </div>
+
+    <div class="col-lg-6" id="row2plt4">
+        <h5>&nbsp;&nbsp;Latitude vs. Wind Speed</h5><img id="plt4pg1" src="LatVsWindSpeed.png" alt="wind plot" width="305" height="275">
+    </div>
+</div>
 
 
 <!--Begin Footer Row-->
@@ -82,3 +103,5 @@
 </body>
 
 </html>
+
+<!--<img src="https://img.icons8.com/officel/30/000000/windy-weather.png"> -->
